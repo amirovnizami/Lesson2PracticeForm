@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Lesson2PracticeForm.Entities.User>
+@
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body>
+    <div>
+        @foreach (var item in Model)
+        {
+            <h1>@item.Name</h1>
+            <h1>@item.Surname</h1>
+            <h1>@item.Image</h1>
+            <h1>@item.Age</h1>
+
+        }
+        <button>Add new User</button>
+    </div>
+</body>
+</html> 
