@@ -1,14 +1,26 @@
 [
   {
-    "Name": "Nizami",
-    "Surname": "Amirov",
-    "Image": "adad",
-    "Age": 21
+    "Name": "weq",
+    "Surname": "qe",
+    "Image": "qe",
+    "Age": 4
   },
-    {
-      "Age": 21,
-      "Image": "sada",
-      "Name": "Aqshin",
-      "Surname": "Ahmedli"
-    }
+  {
+    "Name": "sfs",
+    "Surname": "sfs",
+    "Image": "sfds",
+    "Age": 5
+  },
+  {
+    "Name": null,
+    "Surname": null,
+    "Image": null,
+    "Age": 0
+  },
+  {
+    "Name": "nizami",
+    "Surname": "amirov",
+    "Image": "2rwerwr",
+    "Age": 21
+  }
 ]

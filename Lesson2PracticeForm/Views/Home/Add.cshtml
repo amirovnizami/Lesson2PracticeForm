@@ -1,11 +1,27 @@
 ﻿@model Lesson2PracticeForm.Models.UserAddViewModel
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+<html>
+<body>
+<form asp-controller="Home" asp-action="WriteJson">
+    <section>
+        <label asp-for="User.Name">Name</label>
+        <input asp-for="User.Name"/>
+    </section>
+    <section>
+        <label asp-for="User.Surname">Surname</label>
+        <input asp-for="User.Surname"/>
+    </section>
+    <section>
+        <label asp-for="User.Image">Image url</label>
+        <input asp-for="User.Image"/>
+    </section>
+    <section>
+        <label asp-for="User.Age">Age</label>
+        <input asp-for="User.Age"/>
+    </section>
+    <section>
+        <button type="submit">Add User</button>
+    </section>
+</form>
+</body>
+</html>
 
-    <html>
-        <body>
-            <form>
-                <label></label>
-            </form>
-        </body>
-    </html>
-}

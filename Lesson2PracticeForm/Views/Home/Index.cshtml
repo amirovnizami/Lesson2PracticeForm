@@ -1,22 +1,57 @@
 ﻿@model IEnumerable<Lesson2PracticeForm.Entities.User>
-@
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-<!DOCTYPE html>
-
 <html>
 <head>
+    <style>
+        table {
+            width: 70%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .btn{ 
+            padding-top: 30px;
+            width: 70%;
+        }
+        button{ 
+            margin: auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div>
-        @foreach (var item in Model)
-        {
-            <h1>@item.Name</h1>
-            <h1>@item.Surname</h1>
-            <h1>@item.Image</h1>
-            <h1>@item.Age</h1>
+<div>
+    <table>
 
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Image</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        @foreach (var user in Model)
+        {
+            <tbody>
+            <td>@user.Name</td>
+            <td>@user.Surname</td>
+            <td>@user.Image</td>
+            <td>@user.Age</td>
+            </tbody>
         }
-        <button>Add new User</button>
+
+    </table>
+    <div class="btn">
+        <button onclick="redirectToAddPage()">Add new User</button>
     </div>
+</div>
+<script>
+    function redirectToAddPage() {
+        window.location.href = '@Url.Action("Add", "Home")';
+    }
+</script>
 </body>
 </html> 
